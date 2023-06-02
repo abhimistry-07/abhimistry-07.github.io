@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.e07d3fbc.js",
+    "main.js": "/static/js/main.6db9117e.js",
     "static/js/787.b217d0ff.chunk.js": "/static/js/787.b217d0ff.chunk.js",
     "static/media/ABHISHEK_MISTRY_Resume.pdf": "/static/media/ABHISHEK_MISTRY_Resume.1bd86ed7959651944dfc.pdf",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.e07d3fbc.js.map": "/static/js/main.e07d3fbc.js.map",
+    "main.6db9117e.js.map": "/static/js/main.6db9117e.js.map",
     "787.b217d0ff.chunk.js.map": "/static/js/787.b217d0ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.e07d3fbc.js"
+    "static/js/main.6db9117e.js"
   ]
 }
