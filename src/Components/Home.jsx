@@ -4,17 +4,23 @@ import Contact from "./Contact";
 import Project from "./Project";
 import Skill from "./Skill";
 import NavBar from "./NavBar";
+import styled from "styled-components";
 
 function Home() {
   return (
-    <div id="home">
+    <DIV id="home">
       <NavBar />
       <About />
-      <Project />
       <Skill />
+      <Project />
       <Contact />
-    </div>
+    </DIV>
   );
 }
 
 export default Home;
+
+const DIV = styled.div`
+  background-color: black;
+  color: white;
+`;
