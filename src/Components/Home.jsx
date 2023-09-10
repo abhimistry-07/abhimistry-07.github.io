@@ -5,6 +5,8 @@ import Project from "./Project";
 import Skill from "./Skill";
 import NavBar from "./NavBar";
 import styled from "styled-components";
+import GitHub from "./GitHub";
+import { ScrollToTop } from "./ScrollToTop";
 
 function Home() {
   return (
@@ -13,7 +15,9 @@ function Home() {
       <About />
       <Skill />
       <Project />
+      <GitHub />
       <Contact />
+      <ScrollToTop />
     </DIV>
   );
 }

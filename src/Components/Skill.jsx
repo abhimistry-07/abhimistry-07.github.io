@@ -14,51 +14,53 @@ import reactRouter from "./downloads/React Router.png";
 
 function Skill() {
   return (
-    <DIV id="skills">
-      <h1 className="skills-heading">Skills</h1>
-      <div className="skills-grid">
-        <div className="skills-card">
-          <img src={html} alt="" className="skills-card-img" />
-          <p className="skills-card-name">HTML</p>
+    <div id="skills">
+      <DIV>
+        <h1 className="skills-heading">Skills</h1>
+        <div className="skills-grid">
+          <div className="skills-card">
+            <img src={html} alt="" className="skills-card-img" />
+            <p className="skills-card-name">HTML</p>
+          </div>
+          <div className="skills-card">
+            <img src={css} alt="" className="skills-card-img" />
+            <p className="skills-card-name">CSS</p>
+          </div>
+          <div className="skills-card">
+            <img src={js} alt="" className="skills-card-img" />
+            <p className="skills-card-name">JavaScript</p>
+          </div>
+          <div className="skills-card">
+            <img src={react} alt="" className="skills-card-img" />
+            <p className="skills-card-name">React</p>
+          </div>
+          <div className="skills-card">
+            <img src={redux} alt="" className="skills-card-img" />
+            <p className="skills-card-name">Redux</p>
+          </div>
+          <div className="skills-card">
+            <img src={github} alt="" className="skills-card-img" />
+            <p className="skills-card-name">GitHub</p>
+          </div>
+          <div className="skills-card">
+            <img src={git} alt="" className="skills-card-img" />
+            <p className="skills-card-name">Git</p>
+          </div>
+          <div className="skills-card">
+            <img src={reactRouter} alt="" className="skills-card-img" />
+            <p className="skills-card-name">React Router</p>
+          </div>
+          <div className="skills-card">
+            <img src={netlify} alt="" className="skills-card-img" />
+            <p className="skills-card-name">Netlify</p>
+          </div>
+          <div className="skills-card">
+            <img src={vercel} alt="" className="skills-card-img" />
+            <p className="skills-card-name">Vercel</p>
+          </div>
         </div>
-        <div className="skills-card">
-          <img src={css} alt="" className="skills-card-img" />
-          <p className="skills-card-name">CSS</p>
-        </div>
-        <div className="skills-card">
-          <img src={js} alt="" className="skills-card-img" />
-          <p className="skills-card-name">JavaScript</p>
-        </div>
-        <div className="skills-card">
-          <img src={react} alt="" className="skills-card-img" />
-          <p className="skills-card-name">React</p>
-        </div>
-        <div className="skills-card">
-          <img src={redux} alt="" className="skills-card-img" />
-          <p className="skills-card-name">Redux</p>
-        </div>
-        <div className="skills-card">
-          <img src={github} alt="" className="skills-card-img" />
-          <p className="skills-card-name">GitHub</p>
-        </div>
-        <div className="skills-card">
-          <img src={git} alt="" className="skills-card-img" />
-          <p className="skills-card-name">Git</p>
-        </div>
-        <div className="skills-card">
-          <img src={reactRouter} alt="" className="skills-card-img" />
-          <p className="skills-card-name">React Router</p>
-        </div>
-        <div className="skills-card">
-          <img src={netlify} alt="" className="skills-card-img" />
-          <p className="skills-card-name">Netlify</p>
-        </div>
-        <div className="skills-card">
-          <img src={vercel} alt="" className="skills-card-img" />
-          <p className="skills-card-name">Vercel</p>
-        </div>
-      </div>
-    </DIV>
+      </DIV>
+    </div>
   );
 }
 
@@ -80,7 +82,7 @@ const DIV = styled.div`
     margin-top: 60px;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* border: 1px solid aqua; */
   }
 

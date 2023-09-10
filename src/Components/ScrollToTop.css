@@ -1,0 +1,20 @@
+.scroll-top {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    margin: auto;
+    bottom: 2em;
+    right: 1em;
+    background-color: transparent;
+}
+
+.scroll-top:hover {
+    background-color: #ff004f;
+}
+
+@media (max-width: 900px) {
+    .scroll-top {
+        display: none;
+    }
+}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import resume from "./downloads/ABHISHEK_MISTRY_Resume.pdf";
-import image1 from "./downloads/MyImage1.png";
+import MyImage1 from "./downloads/MyImage1.png";
 import styled from "styled-components";
 
 // /ABHISHEK_MISTRY_Resume
@@ -8,20 +7,19 @@ import styled from "styled-components";
 function About() {
   const [activeTab, setActiveTab] = useState("Technical Skills");
 
-  const onButtonClick = (th) => {
-    // using Java Script method to get PDF file
-    fetch("ABHISHEK_MISTRY_Resume.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "ABHISHEK_MISTRY_Resume.pdf";
-        alink.click();
-        //   window.open("./downloads/ABHISHEK_MISTRY_Resume.pdf", "_blank");
-      });
-    });
+  const onButtonClick = () => {
+    const pdfFile = "ABHISHEK_MISTRY_Resume.pdf";
+
+    // Initiate the download by creating a temporary link and simulating a click event
+    const downloadLink = document.createElement("a");
+    downloadLink.href = pdfFile;
+    downloadLink.download = "ABHISHEK_MISTRY_Resume.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+
+    // Open the downloaded PDF in a new tab
+    window.open(pdfFile, "_blank");
   };
 
   function opentab(tabname) {
@@ -29,221 +27,141 @@ function About() {
   }
 
   return (
-    <DIV id="about" className="about section">
-      <h1 className="about-heading">
-        About <span>Me</span>
-      </h1>
-      <div className="row">
-        <div className="col1">
-          <img
-            className="home-img"
-            src="https://i.pinimg.com/originals/ef/2d/b0/ef2db0885d94fd149a4b7914923bb2a3.gif"
-            // src="https://i.gifer.com/6M8G.gif"
-            // src="https://www.taeyaar.com/wp-content/uploads/2022/09/Coding-and-Programming-Support.gif"
-            alt="About Gif"
-          />
-        </div>
-        <div className="col2">
-          <p id="user-detail-name">
-            Hello, My name is <span>Abhishek Mistry</span> and I enjoy creating
-            thing that live on the internet. Full Stack Developer with hands on
-            experience in building React Apps.
-          </p>
-
-          <br />
-
-          <p id="user-detail-intro">
-            Results-oriented software engineer with a passion for creating
-            robust and user-centric solutions. Excited to take on web
-            development challenges to deliver impacts on user experience.
-            Proficient in various web development technologies and tools,
-            including HTML, CSS, JS, React, Redux, DSA with good problem solving
-            skills.
-          </p>
-          {/* <img src="" alt="" className="home-img" /> */}
-
-          {/* <button id="resume-button-2" onClick={onButtonClick}>
-            Resume
-          </button>
-
-          <br />
-
-          <a href={resume} target="_blank" rel="noreferrer" download>
-            Open First PDF
-          </a>
-
-          <br />
-
-          <a href={resume} id="resume-link-2" target="_blank" download>
-            Resume
-          </a> */}
-
-          {/* <div className="tab-titles">
-            <p
-              className="tab-links active-link"
-              onClick={opentab("Technical Skills")}
-            >
-              Technical Skills
-            </p>
-            <p className="tab-links" onClick={opentab("Soft Skills")}>
-              Soft Skills
-            </p>
-            <p className="tab-links" onClick={opentab("Education")}>
-              Education
-            </p>
+    <div id="about" className="about section">
+      <DIV>
+        <h1 className="about-heading">
+          About <span>Me</span>
+        </h1>
+        <div className="row">
+          <div className="col1">
+            <img
+              className="home-img"
+              src={MyImage1}
+              // src="https://i.pinimg.com/originals/ef/2d/b0/ef2db0885d94fd149a4b7914923bb2a3.gif"
+              // src="https://i.gifer.com/6M8G.gif"
+              // src="https://www.taeyaar.com/wp-content/uploads/2022/09/Coding-and-Programming-Support.gif"
+              alt="My Image"
+            />
           </div>
-          <div className="tab-content active-tab" id="Technical Skills">
-            <ul>
-              <li>
-                <span>Frontend Development</span>
-                <br />
-                HTML5 | CSS3 | JavaScript | ReactJs
-              </li>
-              <li>
-                <span>Data Structure & Algorithms</span>
-                <br />
-                Arrays | Strings | Stacks | Queues | Linked List
-              </li>
-            </ul>
-          </div>
-          <div className="tab-content" id="Soft Skills">
-            <ul>
-              <li>
-                <span>Self-learning</span>
-                <br />
-                Having the skill of self-learning can greatly benefit a
-                developer at their workplace.
-              </li>
-              <li>
-                <span>Time management</span>
-                <br />
-                Being time-conscious can help a developer meet deadlines and
-                give exact estimates.{" "}
-              </li>
-              <li>
-                <span>Problem-solving skills</span>
-                <br />
-                It's about designing better UI, maintaining software systems, or
-                fixing bugs.{" "}
-              </li>
-            </ul>
-          </div>
-          <div className="tab-content" id="Education">
-            <ul>
-              <li>
-                <span>Full Stack Web Development</span>
-                <br />
-                Masai School, Bengaluru
-                <br />
-                August 2022 - present
-              </li>
-              <li>
-                <span>Bachelor in Automobile Engineering</span>
-                <br />
-                Marwadi Education Foundation Group of Institutions, Rajkot
-                <br />
-                June 2018 - April 2021
-              </li>
-            </ul>
-          </div> */}
-          <div className="tab-titles">
-            <p
-              className={`tab-links ${
-                activeTab === "Technical Skills" ? "active-link" : ""
+          <div className="col2">
+            <p id="user-detail-name">
+              Hello, My name is <span>Abhishek Mistry</span> and I enjoy
+              creating thing that live on the internet. Full Stack Developer
+              with hands on experience in building React Apps.
+            </p>
+
+            <br />
+
+            <p id="user-detail-intro">
+              Results-oriented software engineer with a passion for creating
+              robust and user-centric solutions. Excited to take on web
+              development challenges to deliver impacts on user experience.
+              Proficient in various web development technologies and tools,
+              including HTML, CSS, JS, React, Redux, DSA with good problem
+              solving skills.
+            </p>
+            <button id="resume-button-2" onClick={onButtonClick}>
+              Resume
+            </button>
+            <div className="tab-titles">
+              <p
+                className={`tab-links ${
+                  activeTab === "Technical Skills" ? "active-link" : ""
+                }`}
+                onClick={() => opentab("Technical Skills")}
+              >
+                Technical Skills
+              </p>
+              <p
+                className={`tab-links ${
+                  activeTab === "Soft Skills" ? "active-link" : ""
+                }`}
+                onClick={() => opentab("Soft Skills")}
+              >
+                Soft Skills
+              </p>
+              <p
+                className={`tab-links ${
+                  activeTab === "Education" ? "active-link" : ""
+                }`}
+                onClick={() => opentab("Education")}
+              >
+                Education
+              </p>
+            </div>
+            <div
+              className={`tab-content ${
+                activeTab === "Technical Skills" ? "active-tab" : ""
               }`}
-              onClick={() => opentab("Technical Skills")}
+              id="Technical Skills"
             >
-              Technical Skills
-            </p>
-            <p
-              className={`tab-links ${
-                activeTab === "Soft Skills" ? "active-link" : ""
+              <ul>
+                <li>
+                  <span>Frontend Development</span>
+                  <br />
+                  HTML5 | CSS3 | JavaScript | ReactJs
+                </li>
+                <li>
+                  <span>Data Structure & Algorithms</span>
+                  <br />
+                  Arrays | Strings | Stacks | Queues | Linked List
+                </li>
+              </ul>
+            </div>
+            <div
+              className={`tab-content ${
+                activeTab === "Soft Skills" ? "active-tab" : ""
               }`}
-              onClick={() => opentab("Soft Skills")}
+              id="Soft Skills"
             >
-              Soft Skills
-            </p>
-            <p
-              className={`tab-links ${
-                activeTab === "Education" ? "active-link" : ""
+              <ul>
+                <li>
+                  <span>Self-learning</span>
+                  <br />
+                  Having the skill of self-learning can greatly benefit a
+                  developer at their workplace.
+                </li>
+                <li>
+                  <span>Time management</span>
+                  <br />
+                  Being time-conscious can help a developer meet deadlines and
+                  give exact estimates.
+                </li>
+                <li>
+                  <span>Problem-solving skills</span>
+                  <br />
+                  It's about designing better UI, maintaining software systems,
+                  or fixing bugs.
+                </li>
+              </ul>
+            </div>
+            <div
+              className={`tab-content ${
+                activeTab === "Education" ? "active-tab" : ""
               }`}
-              onClick={() => opentab("Education")}
+              id="Education"
             >
-              Education
-            </p>
-          </div>
-          <div
-            className={`tab-content ${
-              activeTab === "Technical Skills" ? "active-tab" : ""
-            }`}
-            id="Technical Skills"
-          >
-            <ul>
-              <li>
-                <span>Frontend Development</span>
-                <br />
-                HTML5 | CSS3 | JavaScript | ReactJs
-              </li>
-              <li>
-                <span>Data Structure & Algorithms</span>
-                <br />
-                Arrays | Strings | Stacks | Queues | Linked List
-              </li>
-            </ul>
-          </div>
-          <div
-            className={`tab-content ${
-              activeTab === "Soft Skills" ? "active-tab" : ""
-            }`}
-            id="Soft Skills"
-          >
-            <ul>
-              <li>
-                <span>Self-learning</span>
-                <br />
-                Having the skill of self-learning can greatly benefit a
-                developer at their workplace.
-              </li>
-              <li>
-                <span>Time management</span>
-                <br />
-                Being time-conscious can help a developer meet deadlines and
-                give exact estimates.
-              </li>
-              <li>
-                <span>Problem-solving skills</span>
-                <br />
-                It's about designing better UI, maintaining software systems, or
-                fixing bugs.
-              </li>
-            </ul>
-          </div>
-          <div
-            className={`tab-content ${
-              activeTab === "Education" ? "active-tab" : ""
-            }`}
-            id="Education"
-          >
-            <ul>
-              <li>
-                <span>Full Stack Web Development</span>
-                <br />
-                Masai School, Bengaluru
-                <br />
-                August 2022 - present
-              </li>
-              <li>
-                <span>Bachelor in Automobile Engineering</span>
-                <br />
-                Marwadi Education Foundation Group of Institutions, Rajkot
-                <br />
-                June 2018 - April 2021
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <span>Full Stack Web Development</span>
+                  <br />
+                  Masai School, Bengaluru
+                  <br />
+                  August 2022 - present
+                </li>
+                <li>
+                  <span>Bachelor in Automobile Engineering</span>
+                  <br />
+                  Marwadi Education Foundation Group of Institutions, Rajkot
+                  <br />
+                  June 2018 - April 2021
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </DIV>
+      </DIV>
+    </div>
   );
 }
 
@@ -257,7 +175,6 @@ const DIV = styled.div`
   font-size: 1.2em;
   /* border: solid red; */
 
-
   .row {
     margin-top: 20px;
     display: flex;
@@ -267,10 +184,18 @@ const DIV = styled.div`
 
   .col1 {
     flex-basis: 35%;
+    /* border: 1px solid red; */
   }
 
   .col1 img {
-    width: 100%;
+    /* width: 100%; */
+    /* border: 1px solid blue; */
+    height: 90%;
+
+  }
+
+  .home-img{
+    border-radius: 10%;
   }
 
   .col2 {
@@ -358,5 +283,26 @@ const DIV = styled.div`
 
   .tab-content.active-tab {
     display: block;
+  }
+
+  #resume-button-2 {
+    /* display: block; */
+    margin: 50px auto;
+    width: fit-content;
+    background-color: black;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+  }
+
+  #resume-button-2:hover {
+    cursor: pointer;
+    background: #ff004f;
+  }
+
+  @media screen and (max-width: 600px) {
   }
 `;
