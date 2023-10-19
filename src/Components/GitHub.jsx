@@ -31,9 +31,15 @@ function GitHub() {
       />
       <br />
       <div className="react-activity-calendar">
-        <h1 style={{ marginTop: "50px" }}>Days I Code</h1>
+        <h1 style={{ margin: "50px 0" }}>Days I Code</h1>
         <GitHubCalendar
-          style={{ margin: "auto", marginTop:"30px" }}
+          style={{
+            margin: "auto",
+            marginTop: "30px",
+            width: "90%",
+            // marginLeft: "10px",
+            // marginRight: "10px",
+          }}
           username="abhimistry-07"
           blockSize={15}
           blockMargin={5}
@@ -48,11 +54,22 @@ const DIV = styled.div`
   padding: 50px 0;
 
   img {
-    margin-top: 20px;
+    margin: 10px 10px;
   }
 
   img ~ h1 {
     margin-top: 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    img {
+      width: 80%;
+      margin: 10px 10px;
+    }
+
+    #github-top-langs {
+      width: 55%;
+    }
   }
 `;
 

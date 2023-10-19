@@ -4,6 +4,7 @@ import resume from "./downloads/ABHISHEK_MISTRY_Resume.pdf";
 import contact from "./downloads/Contact.gif";
 
 import cs from "./downloads/ABHISHEK_MISTRY_Resume.pdf";
+import NavBar from "./NavBar";
 
 // GitHub profile link : id="contact-github"
 // LinkedIn profile link : id="contact-linkedin"
@@ -86,7 +87,7 @@ function Contact() {
                   </svg>
                 </a>
               </div>
-              <form action="">
+              <form action="" id="form">
                 <input
                   type="text"
                   name="Name"
@@ -425,5 +426,26 @@ const DIV = styled.div`
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .row {
+      /* display: flex; */
+      flex-direction: column;
+    }
+
+    #form {
+      margin: auto;
+      width: 80%;
+    }
+
+    .sub-title {
+      margin-top: 0px;
+      font-size: 40px;
+    }
+
+    .social-icons a svg{
+      width: 25px;
+    }
   }
 `;

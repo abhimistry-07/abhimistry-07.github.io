@@ -71,7 +71,8 @@ export default Skill;
 // Name : class="skills-card-name"
 
 const DIV = styled.div`
-  /* border: solid red; */
+  background-color: black;
+  color: white;
   .skills-heading {
     font-size: 60px;
     font-weight: 600;
@@ -82,15 +83,10 @@ const DIV = styled.div`
     margin-top: 60px;
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* border: 1px solid aqua; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .skills-card {
-    /* width: 140px; */
-    /* border: 1px solid aqua; */
-    /* background-color: white; */
-    /* color: black; */
     width: 150px;
     margin: auto;
     padding: 10px;
@@ -118,10 +114,6 @@ const DIV = styled.div`
         --border-angle: 1turn;
       }
     }
-
-    /* &:hover {
-      animation-play-state: paused;
-    } */
   }
 
   @property --border-angle {
@@ -154,7 +146,85 @@ const DIV = styled.div`
   }
 
   .skills-card-name {
-    /* margin-top: 15px; */
     padding: 10px;
+  }
+
+  /* Apply styles for screens with a maximum width of 768px (mobile devices) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .skills-heading {
+      font-size: 36px;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+      gap: 20px;
+    }
+
+    .skills-card {
+      width: 130px;
+    }
+
+    .skills-card-img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .skills-card-name {
+      font-size: 14px;
+    }
+  }
+
+  /* Apply styles for screens with a maximum width of 480px (smaller mobile devices) */
+  @media (max-width: 480px) {
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .skills-heading {
+      font-size: 40px;
+    }
+
+    .skills-grid {
+      gap: 10px;
+    }
+
+    .skills-card {
+      width: 100px;
+    }
+
+    .skills-card-img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .skills-card-name {
+      font-size: 12px;
+    }
+  }
+
+  /* Apply styles for screens with a maximum width of 1024px (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .skills-heading {
+      font-size: 48px;
+    }
+
+    .skills-grid {
+      gap: 30px;
+    }
+
+    .skills-card {
+      width: 120px;
+    }
+
+    .skills-card-img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .skills-card-name {
+      font-size: 14px;
+    }
   }
 `;

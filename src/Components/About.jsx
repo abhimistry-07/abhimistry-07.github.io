@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MyImage1 from "./downloads/MyImage1.png";
 import styled from "styled-components";
+import NavBar from "./NavBar";
 
 // /ABHISHEK_MISTRY_Resume
 
@@ -28,6 +29,7 @@ function About() {
 
   return (
     <div id="about" className="about section">
+      {/* <NavBar/> */}
       <DIV>
         <h1 className="about-heading">
           About <span>Me</span>
@@ -169,39 +171,34 @@ export default About;
 
 const DIV = styled.div`
   margin: auto;
-  margin-top: 20px;
-  padding: 50px;
+  padding: 30px;
   color: #ababab;
   font-size: 1.2em;
-  /* border: solid red; */
+  background-color: black;
+  color: white;
 
   .row {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .col1 {
     flex-basis: 35%;
-    /* border: 1px solid red; */
   }
 
   .col1 img {
-    /* width: 100%; */
-    /* border: 1px solid blue; */
     height: 90%;
-
   }
 
-  .home-img{
+  .home-img {
     border-radius: 10%;
   }
 
   .col2 {
     flex-basis: 60%;
     text-align: left;
-    /* border: red solid; */
   }
 
   .col2 p span {
@@ -243,7 +240,6 @@ const DIV = styled.div`
 
   .tab-links:hover {
     color: #ff004f;
-    /*or     ababab */
   }
 
   .tab-links::after {
@@ -286,7 +282,6 @@ const DIV = styled.div`
   }
 
   #resume-button-2 {
-    /* display: block; */
     margin: 50px auto;
     width: fit-content;
     background-color: black;
@@ -303,6 +298,74 @@ const DIV = styled.div`
     background: #ff004f;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    padding-top: 0px;
+
+    #resume-button-2 {
+      margin: 40px auto;
+      padding: 10px 40px;
+    }
+
+    .about-heading {
+      font-size: 40px;
+    }
+
+    .col1 {
+      flex-basis: 100%;
+      text-align: center;
+    }
+
+    .col1 img {
+      width: 70%;
+      height: auto;
+      border-radius: 10%;
+      margin-bottom: 20px;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .col1,
+    .col2 {
+      flex-basis: 100%;
+      text-align: center;
+    }
+
+    .tab-links {
+      font-size: 16px;
+    }
+
+    .user-detail-name,
+    .user-detail-intro {
+      font-size: 5px !important;
+    }
+
+    .tab-titles {
+      margin: 10px 0 20px;
+    }
+
+    .tab-links {
+      font-size: 14px;
+      margin-right: 20px;
+    }
+
+    .tab-content.active-tab {
+      font-size: 14px;
+    }
+
+    #TechnicalSkills ul {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #TechnicalSkills ul li {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+
+    #TechnicalSkills ul li span {
+      font-size: 14px;
+    }
   }
 `;
