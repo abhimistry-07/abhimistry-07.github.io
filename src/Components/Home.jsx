@@ -7,13 +7,11 @@ import Project from "./Project";
 import GitHub from "./GitHub";
 import Contact from "./Contact";
 import { ScrollToTop } from "./ScrollToTop";
-import NavMenu from "./NavMenu";
 
 function Home() {
   return (
     <div style={{ height: "100%" }}>
       <DIV id="home">
-        {/* <NavMenu /> */}
         <NavBar />
         {/* <About />
         <Skill />
