@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8dee5407.css",
-    "main.js": "/static/js/main.e73c336b.js",
+    "main.js": "/static/js/main.258f63b9.js",
     "static/js/787.b217d0ff.chunk.js": "/static/js/787.b217d0ff.chunk.js",
     "static/media/background.png": "/static/media/background.0e96da471f426abca500.png",
     "static/media/ABHISHEK_MISTRY_Resume.pdf": "/static/media/ABHISHEK_MISTRY_Resume.1bd86ed7959651944dfc.pdf",
@@ -13,7 +13,8 @@
     "static/media/Trendzy.jpg": "/static/media/Trendzy.24a41f1a7da8d19365dd.jpg",
     "static/media/Redux.png": "/static/media/Redux.5de70b7bc0d2556a0958.png",
     "static/media/fusion.jpg": "/static/media/fusion.404496a8482b58843bbd.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Code Converter.jpg": "/static/media/Code Converter.be56baa3c4d34c51a2e1.jpg",
+    "static/media/Content Generator.jpg": "/static/media/Content Generator.3094a3875b87e2743e0a.jpg",
     "static/media/React.svg": "/static/media/React.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/GitHub_Logo.svg": "/static/media/GitHub_Logo.7d6b7d8513e06be0a531dc9303e0bafe.svg",
     "static/media/JS.svg": "/static/media/JS.4c1b5332c1b1057928f6f06cf972c91c.svg",
@@ -21,11 +22,11 @@
     "index.html": "/index.html",
     "static/media/Html.svg": "/static/media/Html.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.8dee5407.css.map": "/static/css/main.8dee5407.css.map",
-    "main.e73c336b.js.map": "/static/js/main.e73c336b.js.map",
+    "main.258f63b9.js.map": "/static/js/main.258f63b9.js.map",
     "787.b217d0ff.chunk.js.map": "/static/js/787.b217d0ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8dee5407.css",
-    "static/js/main.e73c336b.js"
+    "static/js/main.258f63b9.js"
   ]
 }
