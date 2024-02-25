@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.9e7abc10.css",
-    "main.js": "/static/js/main.d2ae8dc3.js",
+    "main.js": "/static/js/main.f3c1da70.js",
     "static/js/787.b217d0ff.chunk.js": "/static/js/787.b217d0ff.chunk.js",
     "static/media/background.png": "/static/media/background.0e96da471f426abca500.png",
-    "static/media/ABHISHEK_MISTRY_Resume.pdf": "/static/media/ABHISHEK_MISTRY_Resume.1bd86ed7959651944dfc.pdf",
     "static/media/Contact.gif": "/static/media/Contact.07d8ecf68bdc21a74e2b.gif",
     "static/media/Netlify.png": "/static/media/Netlify.603ef81c872f9df8c343.png",
     "static/media/MyImage1.png": "/static/media/MyImage1.ec6d55e5ab0416e57714.png",
     "static/media/HomeDecor.jpg": "/static/media/HomeDecor.9d46a093f10fe2564c63.jpg",
     "static/media/ElectroWeb.jpg": "/static/media/ElectroWeb.3f028f0e7807ddb93e38.jpg",
     "static/media/Trendzy.jpg": "/static/media/Trendzy.24a41f1a7da8d19365dd.jpg",
+    "static/media/ABHISHEK_MISTRY_Resume.pdf": "/static/media/ABHISHEK_MISTRY_Resume.adda8a468de40f56966c.pdf",
     "static/media/Snake Game.jpg": "/static/media/Snake Game.7cd5e7c9be0673d38cc8.jpg",
     "static/media/Redux.png": "/static/media/Redux.5de70b7bc0d2556a0958.png",
     "static/media/fusion.jpg": "/static/media/fusion.404496a8482b58843bbd.jpg",
@@ -23,11 +23,11 @@
     "index.html": "/index.html",
     "static/media/Html.svg": "/static/media/Html.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.9e7abc10.css.map": "/static/css/main.9e7abc10.css.map",
-    "main.d2ae8dc3.js.map": "/static/js/main.d2ae8dc3.js.map",
+    "main.f3c1da70.js.map": "/static/js/main.f3c1da70.js.map",
     "787.b217d0ff.chunk.js.map": "/static/js/787.b217d0ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e7abc10.css",
-    "static/js/main.d2ae8dc3.js"
+    "static/js/main.f3c1da70.js"
   ]
 }
