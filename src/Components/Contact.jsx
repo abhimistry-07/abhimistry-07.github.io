@@ -73,10 +73,10 @@ function Contact() {
                 </a>
                 <a
                   id="contact-email"
-                  href="mailto:mistryabhishek2000@gmail.com"
+                  href="mailto:mistryabhi02@gmail.com"
                   target="_blank"
                 >
-                  <p className="hide">mistryabhishek2000@gmail.com</p>
+                  <p className="hide">mistryabhi02@gmail.com</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="2em"
@@ -85,6 +85,18 @@ function Contact() {
                   >
                     <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                   </svg>
+                </a>
+              </div>
+              <div className="">
+                <a href="tel: +91 9512098900" id="contact-phone">
+                  <p>+91 9512098900</p>
+                </a>
+                <a
+                  id="contact-email"
+                  href="mailto:mistryabhi02@gmail.com"
+                  target="_blank"
+                >
+                  <p className="">mistryabhi02@gmail.com</p>
                 </a>
               </div>
               <form action="" id="form">
@@ -114,7 +126,8 @@ function Contact() {
         </div>
         <div className="copyright">
           <p>
-            Designed and build by ❤️Abhishek Mistry, 2023 All right reserved.
+            Designed and build by ❤️Abhishek Mistry
+            {/* 2023 All right reserved. */}
           </p>
         </div>
       </DIV>
@@ -377,7 +390,7 @@ const DIV = styled.div`
 
   .btn {
     display: block;
-    margin: 50px auto;
+    margin: 20px auto;
     width: fit-content;
     background-color: black;
     border: 1px solid #ff004f;
@@ -388,11 +401,8 @@ const DIV = styled.div`
     transition: background 0.5s;
   }
 
-  .btn2:hover {
-    cursor: pointer;
-  }
-
   .btn:hover {
+    cursor: pointer;
     background: #ff004f;
   }
 
@@ -411,12 +421,6 @@ const DIV = styled.div`
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
-  }
-
-  form btn2 {
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
   }
 
   .copyright {
@@ -444,8 +448,12 @@ const DIV = styled.div`
       font-size: 40px;
     }
 
-    .social-icons a svg{
+    .social-icons a svg {
       width: 25px;
     }
+
+    /* .copyright{
+      background: none;
+    } */
   }
 `;

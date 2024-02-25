@@ -46,21 +46,24 @@ function About() {
             />
           </div>
           <div className="col2">
-            <p id="user-detail-name">
-              Hello, My name is <span>Abhishek Mistry</span> and I enjoy
+            {/* <p id="user-detail-name">
+              Diligent full-stack developer with comprehensive skills in data
+              structures and algorithms, adept at employing generative AI in
+              both solo and collaborative projects.
+            </p> */}
+            {/* Hello, My name is <span>Abhishek Mistry</span> and I enjoy
               creating thing that live on the internet. Full Stack Developer
-              with hands on experience in building React Apps.
-            </p>
+              with hands on experience in building React Apps. */}
 
-            <br />
+            {/* <br /> */}
 
             <p id="user-detail-intro">
               Results-oriented software engineer with a passion for creating
               robust and user-centric solutions. Excited to take on web
               development challenges to deliver impacts on user experience.
               Proficient in various web development technologies and tools,
-              including HTML, CSS, JS, React, Redux, DSA with good problem
-              solving skills.
+              including HTML, CSS, JS, React, Redux, Node, Express, MongoDB, DSA
+              with good problem solving skills.
             </p>
             <button id="resume-button-2" onClick={onButtonClick}>
               Resume

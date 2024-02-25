@@ -45,7 +45,7 @@ export default function NavBar() {
               <a href="#home" className="nav-link home">
                 Home
               </a>
-              <a href="#about" className="nav-link about">
+              <a href="#about" className="nav-link">
                 About
               </a>
               <a href="#skills" className="nav-link skills">
@@ -149,7 +149,7 @@ const DIV = styled.div`
 
   #resume-button-1 {
     /* display: block; */
-    margin: 20px auto;
+    margin: 10px auto;
     /* width: fit-content; */
     background: transparent;
     /* background-color: black; */
@@ -174,7 +174,6 @@ const DIV = styled.div`
     flex-wrap: nowrap;
     padding: 5px 10%;
     background-color: #000000;
-
     /* position: fixed; */
   }
 
@@ -222,7 +221,6 @@ const DIV = styled.div`
     z-index: 100;
     background-color: #000000;
   }
-
   /* #############################------------------######### */
 
   @media screen and (max-width: 600px) {
@@ -234,6 +232,10 @@ const DIV = styled.div`
     background-position: center;
     background-color: black;
     color: white;
+
+    #nav-menu {
+      width: 100%;
+    }
 
     .app .about {
       align-items: flex-start;
@@ -297,7 +299,7 @@ const DIV = styled.div`
 
     .about {
       flex-direction: column;
-      margin-top: 3em;
+      /* margin-top: 3em; */
       align-items: flex-start;
     }
 
